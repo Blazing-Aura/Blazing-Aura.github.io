@@ -5,7 +5,7 @@ import SplitLayout, { type layoutData } from '@/components/SplitLayout.vue'
 
 // Create the correct props for the splitLayout
 const AboutMeData: layoutData = {
-  primaryImage: '/images/personal_image.jpg',
+  primaryImage: 'images/personal_image.jpg',
   imageAlt: 'Image of the Mine Now! Project i completed for capstone',
   leftSide: true,
 }

@@ -2,21 +2,21 @@
 import SplitLayout, { type layoutData } from '@/components/SplitLayout.vue'
 
 const AboutProject: layoutData = {
-  primaryImage: '/images/Mine_Now_Context.jpg',
+  primaryImage: 'images/Mine_Now_Context.jpg',
   imageAlt:
     'Image of the Mine Now! Project specifically the easel that is being tested by a colleague from class, who is drawing on the paper available.',
   leftSide: true,
 }
 
 const ProjectProcess: layoutData = {
-  primaryImage: '/images/Mine_Now_Process.png',
+  primaryImage: 'images/Mine_Now_Process.png',
   imageAlt:
     'Screenshot of multiple pages of the design documentation for the Mine Now! project, including photo`s and drawings done.',
   leftSide: false,
 }
 
 const LearnMore: layoutData = {
-  primaryImage: '/images/Mine_Now_links.jpg',
+  primaryImage: 'images/Mine_Now_links.jpg',
   imageAlt:
     'Image of the Mine Now! Project specifically the Portrait case that holds the Ipad that has the web application for the rest of the experience.',
   leftSide: true,

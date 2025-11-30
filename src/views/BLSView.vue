@@ -3,13 +3,13 @@ import type { layoutData } from '@/components/SplitLayout.vue'
 import SplitLayout from '@/components/SplitLayout.vue'
 
 const ProjectData: layoutData = {
-  primaryImage: '/images/BALS_Context.jpg',
+  primaryImage: 'images/BALS_Context.jpg',
   imageAlt: 'Image of the Mine Now! Project i completed for capstone',
   leftSide: true,
 }
 
 const ProcessData: layoutData = {
-  primaryImage: '/images/BALS_Process.png',
+  primaryImage: 'images/BALS_Process.png',
   imageAlt: 'Image of the Mine Now! Project i completed for capstone',
   leftSide: false,
 }
