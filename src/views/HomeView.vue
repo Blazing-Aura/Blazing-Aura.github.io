@@ -83,6 +83,13 @@ function scrollToTop() {
           alt="Photograph of the Case Hero prototype, that include a mock image as to how it would work, as a AR experience that is incorporated directly into the case itself."
         />
       </a>
+      <a class="image-container" href="#image-container-MMP">
+        <h2>Mindfulness Motion Pet</h2>
+        <img
+          src="../../public/images/MMP_hero.jpg"
+          alt="Photograph of a hand holding a phone. On the phone screen is the Mindfulness Motion Pet home page."
+        />
+      </a>
       <h2 id="additional-project">One additional project may be shown when requested</h2>
     </PhotoGrid>
     <!-- Project display area -->
@@ -138,6 +145,23 @@ function scrollToTop() {
           <RouterLink to="/CaseCompanion" class="button" @click="scrollToTop"
             >More details</RouterLink
           >
+        </div>
+      </section>
+    </div>
+    <div class="image-container-glideshow" id="image-container-MMP">
+      <section class="summary-box">
+        <h2>Mindfulness Motion Pet</h2>
+        <p>
+          Mindfulness Motion pet (M.M.P.) was an assessed project that focused on creating a concept
+          that would cause positive impact to a specific health issue. In which MMP focuses to
+          address mental illnesses that impact people from around the world.
+        </p>
+        <p>
+          To learn more about the process that was needed to complete the project, feel free to go
+          to <strong>More details</strong>.
+        </p>
+        <div class="button-group">
+          <RouterLink to="/MMP" class="button" @click="scrollToTop">More details</RouterLink>
         </div>
       </section>
     </div>
@@ -202,6 +226,10 @@ main {
 #image-container-AR {
   background-image: url(../../public/images/AR_Hero.png);
   justify-content: flex-start;
+}
+
+#image-container-MMP {
+  background-image: url(../../public/images/MMP_hero.jpg);
 }
 
 .summary-box {

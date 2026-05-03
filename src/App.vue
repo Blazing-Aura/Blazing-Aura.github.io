@@ -46,6 +46,7 @@ function scrollToTop() {
           <RouterLink to="/CaseCompanion" class="option" @click="scrollToTop"
             >Case Companion</RouterLink
           >
+          <RouterLink to="/MMP" class="option" @click="scrollToTop">M.M.P.</RouterLink>
         </div>
       </div>
       <RouterLink to="/Gallery" class="button nav-button" @click="scrollToTop"

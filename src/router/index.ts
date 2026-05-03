@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import MineNowView from '@/views/MineNowView.vue'
 import ARView from '@/views/ARView.vue'
+import MMPView from '@/views/MMPView.vue'
 import GalleryView from '@/views/GalleryView.vue'
 import BLSView from '@/views/BLSView.vue'
 
@@ -27,6 +28,11 @@ const router = createRouter({
       path: '/CaseCompanion',
       name: 'Case Companion',
       component: ARView,
+    },
+    {
+      path: '/MMP',
+      name: 'Mindfulness Motion Pet',
+      component: MMPView,
     },
     {
       path: '/Gallery',
