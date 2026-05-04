@@ -62,38 +62,49 @@ function scrollToTop() {
       </div>
     </SplitLayout>
     <PhotoGrid>
-      <a class="image-container" href="#image-container-minenow">
-        <h2>Mine Now!</h2>
-        <img
-          src="../../public/images/MineNow_Hero.jpg"
-          alt="Photograph of the the Mine Now! project i completed for capstone. It includes a easel where the user can draw and an ipad that is used to view and continue with the experience"
-        />
-      </a>
-      <a class="image-container" href="#image-container-BALS">
-        <h2>B.L.S</h2>
-        <img
-          src="../../public/images/BALS_hero.png"
-          alt="Photograph of the Bouldering and Lead Scorer (also know as B.A.L.S.), which was a project that made something intangible like the score of the sport, tangible with physical buttons and rotary encoders."
-        />
-      </a>
-      <a class="image-container" href="#image-container-AR">
-        <h2>Case Companion</h2>
-        <img
-          src="../../public/images/AR_Hero.png"
-          alt="Photograph of the Case Hero prototype, that include a mock image as to how it would work, as a AR experience that is incorporated directly into the case itself."
-        />
-      </a>
-      <a class="image-container" href="#image-container-MMP">
-        <h2>Mindfulness Motion Pet</h2>
-        <img
-          src="../../public/images/MMP_hero.jpg"
-          alt="Photograph of a hand holding a phone. On the phone screen is the Mindfulness Motion Pet home page."
-        />
-      </a>
+      <template v-slot:header> Here's some snippet of work i've done recently </template>
+      <template v-slot:body>
+        <a class="project-container" href="#image-container-minenow">
+          <h2>Mine Now!</h2>
+          <div class="image-container">
+            <img
+              src="../../public/images/MineNow_Hero.jpg"
+              alt="Photograph of the the Mine Now! project i completed for capstone. It includes a easel where the user can draw and an ipad that is used to view and continue with the experience"
+            />
+          </div>
+        </a>
+        <a class="project-container" href="#image-container-BALS">
+          <h2>B.L.S</h2>
+          <div class="image-container">
+            <img
+              src="../../public/images/BALS_hero.png"
+              alt="Photograph of the Bouldering and Lead Scorer (also know as B.A.L.S.), which was a project that made something intangible like the score of the sport, tangible with physical buttons and rotary encoders."
+            />
+          </div>
+        </a>
+        <a class="project-container" href="#image-container-AR">
+          <h2>Case Companion</h2>
+          <div class="image-container">
+            <img
+              src="../../public/images/AR_Hero.png"
+              alt="Photograph of the Case Hero prototype, that include a mock image as to how it would work, as a AR experience that is incorporated directly into the case itself."
+            />
+          </div>
+        </a>
+        <a class="project-container" href="#image-container-MMP">
+          <h2>Mindfulness Motion Pet</h2>
+          <div class="image-container">
+            <img
+              src="../../public/images/MMP_hero.jpg"
+              alt="Photograph of a hand holding a phone. On the phone screen is the Mindfulness Motion Pet home page."
+            />
+          </div>
+        </a>
+      </template>
       <h2 id="additional-project">One additional project may be shown when requested</h2>
     </PhotoGrid>
     <!-- Project display area -->
-    <div class="image-container-glideshow" id="image-container-minenow">
+    <div class="project-container-glideshow" id="image-container-minenow">
       <section class="summary-box">
         <h2>Mine Now!</h2>
         <p>
@@ -185,8 +196,8 @@ main {
   grid-column: 1 / 4;
 }
 
-.image-container {
-  width: calc(100vw / 3 - var(--padding-large));
+.project-container {
+  width: calc(100vw / 4.1 - var(--padding-large));
   aspect-ratio: 1;
   text-align: center;
   align-content: center;
@@ -194,14 +205,18 @@ main {
   & img {
     /* width: auto;
     height: auto; */
-    max-height: calc(100vw / 3 - (var(--padding-large) * 4));
-    max-width: calc(100vw / 3 - (var(--padding-large) * 4));
+    max-height: calc(100vw / 4.1 - (var(--padding-large) * 4));
+    max-width: calc(100vw / 4.1 - (var(--padding-large) * 4));
     /* aspect-ratio: 1; */
     contain: content;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: infinite;
   }
 }
 
-.image-container-glideshow {
+.project-container-glideshow {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -242,5 +257,33 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--padding-medium);
+}
+
+.gallery-container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: var(--black); */
+  margin: var(--padding-small);
+  max-width: calc(100vw / 3.25);
+  height: auto;
+}
+
+.image-container {
+  padding: var(--padding-large);
+  text-align: center;
+  align-content: center;
+  aspect-ratio: 1;
+  width: auto;
+}
+
+.image-container img:hover {
+  max-height: calc(100vw / 4.1);
+  max-width: calc(100vw / 4.1);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: infinite;
 }
 </style>

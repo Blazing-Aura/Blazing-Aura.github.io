@@ -13,6 +13,12 @@ const ProcessData: layoutData = {
   imageAlt: 'Image of the Mine Now! Project i completed for capstone',
   leftSide: false,
 }
+
+const SolutionData: layoutData = {
+  primaryImage: 'images/BALS_Final.jpg',
+  imageAlt: 'Photo of the B.L.S. Machine turned on',
+  leftSide: true,
+}
 </script>
 
 <template>
@@ -58,6 +64,16 @@ const ProcessData: layoutData = {
       ask!
     </h3>
   </SplitLayout>
+  <splitLayout :required-data="SolutionData">
+    <h2>Final Solution</h2>
+    <p>
+      The final result for the project is an interactive device that includes dials and buttons to
+      alter the score. The design follows a wall-climbing style to make it clear where the user
+      needs to place the figure on the lead climb. The use of dials and buttons to calculate the
+      score of the athlete Instructions given for each part of the scoring to clarify their purpose
+      in the scoring system.
+    </p>
+  </splitLayout>
   <section id="video-recording">
     <h2>Project Video</h2>
     <p>
@@ -92,7 +108,7 @@ const ProcessData: layoutData = {
     max-width: 55%;
     font-size: 8rem;
     color: var(--white);
-    /* background-color: rgba(224, 224, 224, 0.5); */
+background-color: rgba(116, 116, 116, 0.75);
     padding: 0 0 var(--padding-large) var(--padding-large);
     transition: color 2s;
   }

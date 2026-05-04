@@ -66,6 +66,7 @@ document.addEventListener('scroll', () => {
   height: 100%;
   max-height: 100vh;
   object-fit: cover;
+  background-color: var(--white);
 }
 
 #main-container {

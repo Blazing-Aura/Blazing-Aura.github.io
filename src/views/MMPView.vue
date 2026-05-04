@@ -35,7 +35,7 @@ const LearnMore: layoutData = {
       positive mental well-being to support those impacted by depression, anxiety and bipolar
       disorder?
     </p>
-    <h2>The outcome</h2>
+    <h3>The outcome</h3>
     <ul>
       <li>
         Developed a prototype phone app to support those with mental illnesses and promote positive
@@ -121,8 +121,8 @@ const LearnMore: layoutData = {
     width: fit-content;
     max-width: 55%;
     font-size: 8rem;
-    color: var(--white);
-    /* background-color: rgba(224, 224, 224, 0.5); */
+    color: var(--black);
+    background-color: rgba(116, 116, 116, 0.75);
     padding: 0 0 var(--padding-large) var(--padding-large);
     transition: color 2s;
   }

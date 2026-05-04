@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { faPhotoFilm, faProjectDiagram } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faPhotoFilm, faProjectDiagram } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // import { useTemplateRef } from 'vue'
 import { RouterView } from 'vue-router'
@@ -31,7 +31,7 @@ function scrollToTop() {
   <nav>
     <div id="right-links">
       <RouterLink to="/" class="button nav-button" @click="scrollToTop" id="home-button">
-        <FontAwesomeIcon :icon="faPhotoFilm" /> Home</RouterLink
+        <FontAwesomeIcon :icon="faHome" /> Home</RouterLink
       >
       <h1 ref="header">Santiago Barreto Barrera</h1>
     </div>
@@ -96,7 +96,7 @@ footer {
   width: 15rem;
   height: fit-content;
   display: block;
-  padding: var(--padding-small);
+  padding: var(--padding-medium);
   cursor: pointer;
   margin-right: var(--padding-large);
 }

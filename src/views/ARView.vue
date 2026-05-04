@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { layoutData } from '@/components/SplitLayout.vue'
 import SplitLayout from '@/components/SplitLayout.vue'
+import PhotoGrid from '@/components/PhotoGrid.vue'
 
 const ProjectData: layoutData = {
   primaryImage: 'images/AR_Context.png',
@@ -18,6 +19,13 @@ const Process2Data: layoutData = {
   primaryImage: 'images/AR_Process_2.jpg',
   imageAlt: 'Image of the Mine Now! Project i completed for capstone',
   leftSide: true,
+}
+
+const SolutionData: layoutData = {
+  primaryImage: 'images/AR_Final.png',
+  imageAlt:
+    'Photo of a user interacting with an iPad that holds the gallery of other participants work',
+  leftSide: false,
 }
 </script>
 
@@ -79,6 +87,36 @@ const Process2Data: layoutData = {
       ask!
     </h3>
   </SplitLayout>
+  <SplitLayout :required-data="SolutionData">
+    <h2>Final Solution</h2>
+    <p>
+      The design implements both digital and physical interactions to provide a similar scenario the
+      artists experience. Using AI (specifically image style transfer), this experience mimics the
+      situations artists face, step by step. To push the stigma of generative AI being unethical,
+      the participant’s artwork is sold, they are shown a video when their work is being stolen,
+      portraying GAI businesses as being greedy and displaying quotes to reflect on the issue.
+    </p>
+  </SplitLayout>
+  <PhotoGrid>
+    <template v-slot:header> Use Case for Prototype </template>
+    <template v-slot:body>
+      <img
+        src="../../images/AR_Use1.jpg"
+        alt="Image of someone putting on a glue that has a wire coming out, there are computer electronics on the table as well."
+      />
+      <img
+        src="../../images/AR_Use2.png"
+        alt="Image of the Case Companion AR prototype working. It shows a welcome page and asks if the user wants to either start building from scratch or just to change a computer component."
+      />
+      <img
+        src="../../images/AR_Use3.png"
+        alt="Image of the user picking up a graphics card which is outlined by the AR device, while showing an informative pop-up with details about it."
+      />
+      <img src="../../images/AR_Use4.png" alt="Image of simulation mode which demonstrates how the component detected should be placed inside the computer case." />
+      <img src="../../images/AR_Use5.png" alt="Image of a warning that informs of the user of common problems that can occur if they are not careful." />
+      <img src="../../images/AR_Use6.png" alt="Image of the computer being verified to be completed with everything ticked and ready to run." />
+    </template>
+  </PhotoGrid>
 </template>
 
 <style scoped>
@@ -101,7 +139,7 @@ const Process2Data: layoutData = {
     max-width: 55%;
     font-size: 8rem;
     color: var(--white);
-    /* background-color: rgba(224, 224, 224, 0.5); */
+    background-color: rgba(116, 116, 116, 0.75);
     padding: 0 0 var(--padding-large) var(--padding-large);
     transition: color 2s;
   }
@@ -109,5 +147,12 @@ const Process2Data: layoutData = {
   & h1:hover {
     color: var(--complement-colour);
   }
+}
+
+img {
+  max-height: calc(100vw / 3 - (var(--padding-large)));
+  max-width: calc(100vw / 3 - (var(--padding-large)));
+  /* aspect-ratio: 1; */
+  contain: content;
 }
 </style>

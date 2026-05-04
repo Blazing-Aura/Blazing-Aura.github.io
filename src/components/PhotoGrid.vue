@@ -2,9 +2,9 @@
 
 <template>
   <section id="gallery">
-    <h1>Here's some snippet of work i've done recently</h1>
+    <h2><slot name="header"></slot></h2>
     <div class="gallery-container">
-      <slot></slot>
+      <slot name="body"></slot>
     </div>
   </section>
 </template>
@@ -16,16 +16,22 @@
   min-width: 90vh;
   align-content: center;
   text-align: center;
+  min-height: 100vh;
 }
 
-h1 {
-  font-size: 4rem;
+h2 {
+  font-size: 3rem;
   padding: calc(var(--padding-large) * 2);
+  color: var(--complement-colour);
 }
 
 .gallery-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   justify-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vw / 3.45);
 }
 </style>

@@ -1,12 +1,13 @@
 /* styling for entire website */
 :root {
-  --primary-colour: #e7dcc8;
-  --complement-colour: #eb8962;
-  --accent-colour: #3a60f0;
+  --primary-colour: #fec260;
+  --complement-colour: #f68b63;
+  --accent-colour: #7bd1ed;
+  --background-colour: #2a3233;
 
-  --darker-accent-colour: #2c49af;
-  --light-accent-colour: #788bca;
-  --light-colour: #a3abc5;
+  --darker-accent-colour: #dd7e5c;
+  --light-accent-colour: #f5b49c;
+  --light-colour: #e6c9bf;
   /* --third-colour: #3ad3f0;
   --third-colour-faded: #446970; */
   --white: rgba(255, 255, 255);
@@ -29,7 +30,7 @@
   --color-background: var(--primary-colour);
   --color-heading: var(--complement-colour);
   --color-text: var(--black);
-  --faded-background: rgba(231, 220, 200, 0.75);
+  --faded-background: rgba(90, 86, 78, 0.75);
 }
 
 /* if the user has dark theme on, change to that instead */
@@ -46,13 +47,13 @@
 h1,
 h2,
 h3 {
-  font-family: 'Lilita One', sans-serif;
-  font-weight: 400;
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 
 h1 {
-  color: var(--color-heading);
+  color: var(--black);
   font-size: 2.25rem;
 }
 
@@ -66,13 +67,14 @@ h3 {
   font-size: 1.25rem;
 }
 
-p {
-  font-family: 'Sono', monospace;
+p, li {
+  font-family: 'Oxanium', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: medium;
+  font-style: normal;
   font-variation-settings: 'MONO' 1;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  color: var(--white);
 }
 
 a {
