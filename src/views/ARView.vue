@@ -101,20 +101,20 @@ const SolutionData: layoutData = {
     <template v-slot:header> Use Case for Prototype </template>
     <template v-slot:body>
       <img
-        src="../../images/AR_Use1.jpg"
+        src="../../public/images/AR_Use1.jpg"
         alt="Image of someone putting on a glue that has a wire coming out, there are computer electronics on the table as well."
       />
       <img
-        src="../../images/AR_Use2.png"
+        src="../../public/images/AR_Use2.png"
         alt="Image of the Case Companion AR prototype working. It shows a welcome page and asks if the user wants to either start building from scratch or just to change a computer component."
       />
       <img
-        src="../../images/AR_Use3.png"
+        src="../../public/images/AR_Use3.png"
         alt="Image of the user picking up a graphics card which is outlined by the AR device, while showing an informative pop-up with details about it."
       />
-      <img src="../../images/AR_Use4.png" alt="Image of simulation mode which demonstrates how the component detected should be placed inside the computer case." />
-      <img src="../../images/AR_Use5.png" alt="Image of a warning that informs of the user of common problems that can occur if they are not careful." />
-      <img src="../../images/AR_Use6.png" alt="Image of the computer being verified to be completed with everything ticked and ready to run." />
+      <img src="../../public/images/AR_Use4.png" alt="Image of simulation mode which demonstrates how the component detected should be placed inside the computer case." />
+      <img src="../../public/images/AR_Use5.png" alt="Image of a warning that informs of the user of common problems that can occur if they are not careful." />
+      <img src="../../public/images/AR_Use6.png" alt="Image of the computer being verified to be completed with everything ticked and ready to run." />
     </template>
   </PhotoGrid>
 </template>

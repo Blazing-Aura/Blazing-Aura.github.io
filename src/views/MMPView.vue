@@ -121,7 +121,7 @@ const LearnMore: layoutData = {
     width: fit-content;
     max-width: 55%;
     font-size: 8rem;
-    color: var(--black);
+    color: var(--white);
     background-color: rgba(116, 116, 116, 0.75);
     padding: 0 0 var(--padding-large) var(--padding-large);
     transition: color 2s;

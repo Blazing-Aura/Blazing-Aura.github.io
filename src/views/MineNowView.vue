@@ -101,20 +101,20 @@ function exhibition() {
     <template v-slot:header> UI's for iPad display </template>
     <template v-slot:body>
       <img
-        src="../../images/Mine_Now_Use1.png"
+        src="../../public/images/Mine_Now_Use1.png"
         alt="Image of someone putting on a glue that has a wire coming out, there are computer electronics on the table as well."
       />
       <img
-        src="../../images/Mine_Now_Use2.png"
+        src="../../public/images/Mine_Now_Use2.png"
         alt="Image of the Case Companion AR prototype working. It shows a welcome page and asks if the user wants to either start building from scratch or just to change a computer component."
       />
       <img
-        src="../../images/Mine_Now_Use3.png"
+        src="../../public/images/Mine_Now_Use3.png"
         alt="Image of the user picking up a graphics card which is outlined by the AR device, while showing an informative pop-up with details about it."
       />
-      <img src="../../images/Mine_Now_Use4.png" alt="Image of simulation mode which demonstrates how the component detected should be placed inside the computer case." />
-      <img src="../../images/Mine_Now_Use5.png" alt="Image of a warning that informs of the user of common problems that can occur if they are not careful." />
-      <img src="../../images/Mine_Now_Use6.png" alt="Image of the computer being verified to be completed with everything ticked and ready to run." />
+      <img src="../../public/images/Mine_Now_Use4.png" alt="Image of simulation mode which demonstrates how the component detected should be placed inside the computer case." />
+      <img src="../../public/images/Mine_Now_Use5.png" alt="Image of a warning that informs of the user of common problems that can occur if they are not careful." />
+      <img src="../../public/images/Mine_Now_Use6.png" alt="Image of the computer being verified to be completed with everything ticked and ready to run." />
     </template>
   </PhotoGrid>
   <SplitLayout :required-data="LearnMore">

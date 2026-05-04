@@ -104,7 +104,7 @@ function scrollToTop() {
       <h2 id="additional-project">One additional project may be shown when requested</h2>
     </PhotoGrid>
     <!-- Project display area -->
-    <div class="project-container-glideshow" id="image-container-minenow">
+    <div class="image-container-glideshow" id="image-container-minenow">
       <section class="summary-box">
         <h2>Mine Now!</h2>
         <p>
@@ -216,7 +216,7 @@ main {
   }
 }
 
-.project-container-glideshow {
+.image-container-glideshow {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -245,6 +245,7 @@ main {
 
 #image-container-MMP {
   background-image: url(../../public/images/MMP_hero.jpg);
+  justify-content: flex-end;
 }
 
 .summary-box {
